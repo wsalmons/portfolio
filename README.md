@@ -1,3 +1,6 @@
+***This repository was recreated to remove the .idea file that was uploaded into the old repository due to improper use of the .gitignore file. 
+
+
 # portfolio
 Wyatt Salmons Developer Portfolio
 
