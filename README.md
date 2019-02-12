@@ -14,3 +14,22 @@ For your .gitignore, make sure you have a . in front of the file name so it's re
 Overall great work on your milestone, which passes at a Tier III!
 
 *Milestone 1: Tier III*
+
+## Milestone 2a Feedback
+Some good work with your wireframes. The content strategy lacks a little bit in terms of detail but overall it will help you through your development phase. 
+
+First thing to note is that your staggered layout on mobile. I would suggest stacking these items on the smaller screens to ensure there is enough space to comfortably read the text - the horizontal space might get too narrow, so stagger only on screen sizes that can accomodate it well. Due to the simplicity of your site, I would also suggest finding a good color scheme and a good font to balance out amount of content you have for your PWP.  
+
+
+Additional recommendations:
+
+Google Fonts - has ~1000 free fonts & easy to integrate https://fonts.google.com/
+
+FontAwesome - quality library with free iconography for use.
+https://fontawesome.com/
+
+You might want to read ahead regarding the contact form integration, and that documentation is here: https://bootcamp-coders.cnm.edu/class-materials/jquery-validated-captcha-form/
+
+We'll be building PWP in a file named index.php inside of /public_html. Please note that no frontend-facing site files should live outside of the /public_html directory. Remember use an organized and standards-compliant directory structure to house all images, JavaScript, CSS, etc. We are done with the /documentation directory for now!
+
+### Grade Tier IV
