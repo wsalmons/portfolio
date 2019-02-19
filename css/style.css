@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'M PLUS 1p', sans-serif;
+}
+
 html,
 body,
 header,
@@ -29,7 +33,7 @@ header,
 }
 
 h1 {
-	letter-spacing: 8px;
+	letter-spacing: 3px;
 }
 
 h5 {
@@ -43,4 +47,22 @@ h5 {
 
 #glyphiconBig {
 	font-size: 500%;
+}
+
+
+.typewrite {
+	font-size: 4em;
+	color: white;
+	font-family: "M PLUS 1p", monospace;
+}
+
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
 }
