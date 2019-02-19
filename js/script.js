@@ -1,6 +1,16 @@
 // Animations init
 new WOW().init();
 
+
+// Navbar fix
+if ($(window).width() > 768) {
+	window.addEventListener("hashchange", function() { scrollBy(0, -70) });
+} else if ($(window).width() < 768) {
+	window.addEventListener("hashchange", function() { scrollBy(0, -1000) });
+}
+
+
+//Text Animation
 document.addEventListener('DOMContentLoaded',function(event){
 	// array with texts to type in typewriter
 	var dataText = ["Hi, Im Wyatt.", "I am a former first responder, turned web-developer.", "I love creative web design.", "Lets move mountains."];

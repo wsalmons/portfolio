@@ -96,3 +96,9 @@ span {
 .page-footer {
 	background-color: #454944;
 }
+
+#downButton {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
