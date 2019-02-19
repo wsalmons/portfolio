@@ -56,10 +56,16 @@ h3 {
 	text-shadow: 1px 1px 4px gray, 0 0 50px white, 0 0 10px gray;
 }
 
-.container-fluid h1 {
+#halfpage h1 {
 	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
 }
 
+#portfolioAnch h1 {
+	font-size: 3em;
+	color: black;
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: 1px;
+}
 
 .typewrite {
 	font-size: 4em;
@@ -116,4 +122,31 @@ span {
 }
 #arrowBounce {
 	font-size: 200%;
+}
+
+.line-1{
+	position: relative;
+	top: 50%;
+	width: 24em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255,255,255,.75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+
+/* Animation */
+.anim-typewriter{
+	animation: typewriter 1s steps(12) 1s 1 normal both,
+	blinkTextCursor 1000ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+	from{width: 0;}
+	to{width: 6em;}
+}
+@keyframes blinkTextCursor{
+	from{border-right-color: black;}
+	to{border-right-color: transparent;}
 }
