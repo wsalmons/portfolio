@@ -94,6 +94,7 @@ span {
 
 #halfpage {
 	background-image: url(../images/bg2.jpeg);
+	height: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
