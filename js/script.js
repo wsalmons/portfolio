@@ -2,15 +2,6 @@
 new WOW().init();
 new WOW().init();
 
-
-// Navbar fix
-if ($(window).width() > 768) {
-	window.addEventListener("hashchange", function() { scrollBy(0, -70) });
-} else if ($(window).width() < 768) {
-	window.addEventListener("hashchange", function() { scrollBy(0, -1000) });
-}
-
-
 //Text Animation
 document.addEventListener('DOMContentLoaded',function(event){
 	// array with texts to type in typewriter
