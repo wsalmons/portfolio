@@ -66,3 +66,29 @@ span {
 		border-color: transparent;
 	}
 }
+
+#fullpage {
+	background-image: url(../images/intro-bg2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#halfpage {
+	background-image: url(../images/bg2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#card1 {
+	background-image: url(../images/example1.jpg);
+}
+
+#card2 {
+	background-image: url(../images/example2.jpg);
+}
+
+#card3 {
+	background-image: url(../images/example3.jpg);
+}
