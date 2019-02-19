@@ -19,16 +19,16 @@ header,
 }
 
 .top-nav-collapse {
-	background-color: #454944 !important;
+	background-color: #454944;
 }
 
 .navbar:not(.top-nav-collapse) {
-	background: transparent !important;
+	background: transparent;
 }
 
 @media (max-width: 991px) {
 	.navbar:not(.top-nav-collapse) {
-		background: #454944 !important;
+		background: #454944;
 	}
 }
 
@@ -91,4 +91,8 @@ span {
 
 #card3 {
 	background-image: url(../images/example3.jpg);
+}
+
+.page-footer {
+	background-color: #454944;
 }
