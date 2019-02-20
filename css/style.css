@@ -166,3 +166,11 @@ span {
 	from{border-right-color: black;}
 	to{border-right-color: transparent;}
 }
+
+@media (max-height: 690px) {
+	#arrowBounce {
+		position: absolute;
+		bottom: 10rem;
+		left: 10.5rem;
+	}
+}
