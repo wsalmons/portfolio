@@ -9,10 +9,17 @@ header,
 	height: 100%;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 576px) {
 	img,
 	.col-sm-4 {
 		margin-left: 4rem;
+	}
+}
+
+@media (max-width: 380px) {
+	img,
+	.col-sm-4 {
+		margin-left: 2.4rem;
 	}
 }
 
