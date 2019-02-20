@@ -132,7 +132,7 @@ span {
 	font-size: 200%;
 }
 
-.animation{
+.portfoliotype{
 	position: relative;
 	top: 50%;
 	width: 24em;
@@ -146,12 +146,13 @@ span {
 }
 
 /* Animation */
-.animation.animate{
-	animation: typewriter 1s steps(12) 1s 1 normal both,
-	blinkTextCursor 1000ms steps(44) infinite normal;
+.anim-typewriter{
+	animation: typewriter 1s steps(10) 1s 1 normal both,
+	blinkTextCursor 900ms steps(44) infinite normal;
+	animation-delay: 15s;
 }
 @keyframes typewriter{
-	from{width: 0;}
+	from{width: 0em;}
 	to{width: 6em;}
 }
 @keyframes blinkTextCursor{
