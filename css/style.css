@@ -132,7 +132,7 @@ span {
 	font-size: 200%;
 }
 
-.line-1{
+.animation{
 	position: relative;
 	top: 50%;
 	width: 24em;
@@ -146,7 +146,7 @@ span {
 }
 
 /* Animation */
-.anim-typewriter{
+.animation.animate{
 	animation: typewriter 1s steps(12) 1s 1 normal both,
 	blinkTextCursor 1000ms steps(44) infinite normal;
 }
