@@ -10,6 +10,13 @@ header,
 }
 
 @media (max-width: 740px) {
+	img,
+	.col-sm-4 {
+		margin-left: 4rem;
+	}
+}
+
+@media (max-width: 740px) {
 	html,
 	body,
 	header,
