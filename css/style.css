@@ -2,6 +2,11 @@
 	font-family: 'M PLUS 1p', sans-serif;
 }
 
+@font-face {
+	font-family: "typew";
+	src: url(../font/typew.ttf) format("truetype");
+}
+
 html,
 body,
 header,
@@ -13,7 +18,7 @@ header,
 
 h1 {
 	letter-spacing: 3px;
-	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 h5 {
@@ -42,14 +47,14 @@ h3 {
 #portfolioAnch h1 {
 	font-size: 3em;
 	color: black;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'typew', monospace;
 	letter-spacing: 1px;
 }
 
 .typewrite {
 	font-size: 3em;
 	color: white;
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'typew', monospace;
 	letter-spacing: 1px;
 }
 
@@ -146,8 +151,8 @@ span {
 	animation-delay: 15s;
 }
 @keyframes typewriter{
-	from{width: 0em;}
-	to{width: 6em;}
+	from{width: 0;}
+	to{width: 4.5em;}
 }
 @keyframes blinkTextCursor{
 	from{border-right-color: black;}
