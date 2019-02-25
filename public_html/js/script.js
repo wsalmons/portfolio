@@ -5,7 +5,7 @@ new WOW().init();
 //Text Animation
 document.addEventListener('DOMContentLoaded',function(event){
 	// array with texts to type in typewriter
-	var dataText = ["Hi, Im Wyatt.", "I am a former first responder, turned web-developer.", "I love creative web design.", "Lets move mountains."];
+	var dataText = ["Hi, I'm Wyatt.", "I am a driven, detail-oriented, fast-paced web developer.", "I am passionate about coding, and creating.", "I strive to leave a lasting, positive impact on the people around me.", "Let's move mountains."];
 
 	// type one text in the typwriter
 	// keeps calling itself until the text is finished
@@ -46,5 +46,5 @@ document.addEventListener('DOMContentLoaded',function(event){
 	StartTextAnimation(0);
 });
 
-
+//smoothscroll int
 var scroll = new SmoothScroll('a[href*="#"]');
