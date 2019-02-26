@@ -28,7 +28,7 @@ try {
 	 **/
 	$name = filter_input(INPUT_POST, "contactFormName", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	$email = filter_input(INPUT_POST, "contactFormEmail", FILTER_SANITIZE_EMAIL);
-	$message = filter_input(INPUT_POST, "contactFormControlTextarea", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_input(INPUT_POST, "contactFormTextarea", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	// create SendGrid object
 	$emailObject = new \SendGrid\Mail\Mail();
 	/**

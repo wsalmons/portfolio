@@ -16,7 +16,7 @@ $(document).ready(function() {
 		{
 			debug: true,
 			errorClass: "alert alert-danger",
-			errorLabelContainer: "#output-form-area",
+			errorLabelContainer: "#output-area",
 			errorElement: "div",
 			// rules here define what is good or bad input
 			// each rule starts with the form input element's NAME attribute
@@ -55,10 +55,10 @@ $(document).ready(function() {
 					url:$("#contactMeForm").attr("action"),
 					success: function(ajaxOutput) {
 						// clear the output area's formatting
-						$("#output-form-area").css("display","");
+						$("#output-area").css("display","");
 
 						// write the server's reply to the output area
-						$("#output-form-area").html(ajaxOutput);
+						$("#output-area").html(ajaxOutput);
 
 						// reset the form if it was successful
 						if($(".alert-success").length >= 1) {

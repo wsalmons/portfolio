@@ -26,18 +26,15 @@
 		<!-- MDB core JavaScript -->
 		<script type="text/javascript" src="js/mdb.js"></script>
 		<!-- jQuery Form, Additional Methods, Validate -->
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-		<script type="text/javascript"
-				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-		<!-- ADDITIONAL SCRIPTS -->
-		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-		<!-- Your JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<!-- Google reCAPTCHA -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<!-- Your JavaScript Form Validator -->
+		<script src="js/form-validate.js"></script>
+		<!-- ADDITIONAL SCRIPTS -->
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
 
 	</head>
 
@@ -204,30 +201,53 @@
 					<!--/.Carousel Wrapper-->
 				</div>
 			</div>
-			<div class="view" id="halfpageContact">
-				<div class="container">
-					<div class="row my-5">
-						<div class="col-md-4 my-5 mx-auto">
-							<form class="border border-light rounded z-depth-3 p-5 rgba-white-strong" id="contactMeForm">
-								<!--Title-->
-								<p class="h4 mb-5 text-center text">CONTACT US</p>
-								<!--Name-->
-								<input type="text" id="contactFormName" class="form-control mb-4" placeholder="Name">
-								<!--Email-->
-								<input type="email" id="contactFormEmail" class="form-control mb-4" placeholder="E-mail">
-								<!--Message-->
-								<textarea class="form-control rounded-0 mb-5" id="contactFormTextarea" rows="4"
-											 placeholder="Message"></textarea>
-								<!--Site Key-->
-								<div class="g-recaptcha" data-sitekey="6LfLEpQUAAAAAOaSRfQM3BSw5v6lbVtj-qJ4hFrD"></div>
-								<!--Button-->
-								<button class="btn btn-info btn-block btn-#212121 grey darken-1 mb-4" type="submit">Send
-								</button>
-							</form>
-							<div id="output-form-area"></div>
+			<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<!-- BEGIN CONTACT FORM -->
+					<form id="contactMeForm" method="post" action="php/mailer.php" novalidate>
+						<div class="form-group">
+							<label for="contactFormName">Name</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-user"></i></span>
+								</div>
+								<input class="form-control" type="text" name="contactFormName" id="contactFormName"
+										 placeholder="Your Name">
+							</div>
 						</div>
-					</div>
-				</div>
+						<div class="form-group">
+							<label for="contactFormEmail">Email</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-envelope"></i></span>
+								</div>
+								<input class="form-control" type="email" name="contactFormEmail" id="contactFormEmail"
+										 placeholder="Your Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="contactFormTextarea">Message</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text"><i class="fa fa-comment"></i></span>
+								</div>
+								<textarea name="contactFormTextarea" rows="5" id="contactFormTextarea" class="form-control"
+											 placeholder="Your Message (2000 characters max)"></textarea>
+							</div>
+						</div>
+
+						<div class="g-recaptcha" data-sitekey="6LfLEpQUAAAAAOaSRfQM3BSw5v6lbVtj-qJ4hFrD"></div>
+
+						<button class="btn btn-info" type="submit">Submit</button>
+						<button class="btn btn-default" type="reset">Reset</button>
+					</form>
+					<!-- END CONTACT FORM-->
+					<div id="output-area"></div>
+
+				</div><!-- /.col-sm-6 -->
+			</div><!-- /.row -->
 			</div>
 		</main>
 		<!-- Footer Start -->
