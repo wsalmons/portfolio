@@ -45,10 +45,10 @@ h3 {
 }
 
 #portfolioAnch h1 {
-	font-size: 3em;
 	color: black;
-	font-family: 'typew', monospace;
-	letter-spacing: 1px;
+	font-family: 'Roboto', monospace;
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+
 }
 
 .typewrite {
@@ -56,6 +56,10 @@ h3 {
 	color: white;
 	font-family: 'typew', monospace;
 	letter-spacing: 1px;
+}
+
+#contactCard p {
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
 }
 
 /* Nav Bar*/
@@ -105,18 +109,10 @@ h3 {
 	font-size: 200%;
 }
 
-/* Cards*/
+/* Carousel */
 
-#card1 {
-	background-image: url(../images/example1.jpg);
-}
-
-#card2 {
-	background-image: url(../images/example2.jpg);
-}
-
-#card3 {
-	background-image: url(../images/example3.jpg);
+.carousel-inner img {
+	margin: auto;
 }
 
 /* Footer */
@@ -205,3 +201,4 @@ span {
 		left: 10.5rem;
 	}
 }
+
