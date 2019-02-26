@@ -12,60 +12,64 @@ $(document).ready(function() {
 	 * @author Rochelle Lewis <rlewis37@cnm.edu>
 	 **/
 
-	/* begin validate function here */
-
-	$("#contactMeForm").validate({
-		debug: true,
-		errorClass: "alert alert-danger",
-		errorLabelContainer: "#output-area",
-		errorElement: "div",
-		rules: {
-			contactFormName: {
-				require: true
-			},
-			contactFormEmail: {
-				email: true,
-				required: true
-			},
-			contactFormControlTextarea: {
-				required: true,
-				maxLength: 2000,
-				minLength: 10
-			}
-		},
-		//error message to display to the end user when rules above dont pass
-		messages: {
-			contactFormName: {
-				required: "Y u no add name?"
-			},
-			contactFormEmail: {
-				email: "Y u no use real email?",
-				required: "Y u no add email?"
-			},
-			contactFormControlTextarea: {
-				required: "Y u no add message?",
-				maxLength: "Y u write so much?",
-				minLength: "Y u write so little?"
-			}
-		},
-		submitHandler: function(form) {
-			$("#contactMeForm").ajaxSubmit({
-				type: "POST",
-				url: $("#contactMeForm").attr("action"),
-
-				success: function(ajaxOutput) {
-					// clear the output area's formatting
-					$("#output-area").css("display", "");
-
-					// write the server's reply to the output area
-					$("#output-area").html(ajaxOutput);
-
-					// reset the form if it was successful
-					if($(".alert-success").length >= 1) {
-						$("#contactMeForm")[0].reset();
-					}
+	$("#contactMeForm").validate(
+		{
+			debug: true,
+			errorClass: "alert alert-danger",
+			errorLabelContainer: "#output-form-area",
+			errorElement: "div",
+			// rules here define what is good or bad input
+			// each rule starts with the form input element's NAME attribute
+			rules: {
+				contactFormName: {
+					required: true,
+				},
+				contactFormEmail: {
+					email: true,
+					required: true
+				},
+				contactFormTextarea: {
+					required: true,
+					maxlength: 2000,
+					minlength: 10
 				}
-			})
-		}
-	});
+			},
+			// error messages to display to the end user when rules above don't pass
+			messages: {
+				contactFormName: {
+					required: "Y u no add name"
+				},
+				contactFormEmail: {
+					email: "y u no use real email",
+					required: "Y u no add email",
+				},
+				contactFormTextarea: {
+					required: "Y u no add message",
+					maxlength: "Y u no write so much",
+					minlength: "Y you no write so little",
+				}
+			},
+			submitHandler: function(form) {
+				$("#contactMeForm").ajaxSubmit({
+					type: "POST",
+					url:$("#contactMeForm").attr("action"),
+					success: function(ajaxOutput) {
+						// clear the output area's formatting
+						$("#output-form-area").css("display","");
+
+						// write the server's reply to the output area
+						$("#output-form-area").html(ajaxOutput);
+
+						// reset the form if it was successful
+						if($(".alert-success").length >= 1) {
+							$("#contactMeForm")[0].reset();
+						}
+					}
+				})
+
+			}
+
+
+		});
+
 });
