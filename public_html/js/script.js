@@ -48,3 +48,6 @@ document.addEventListener('DOMContentLoaded',function(event){
 
 //smoothscroll int
 var scroll = new SmoothScroll('a[href*="#"]');
+
+//contact form
+
