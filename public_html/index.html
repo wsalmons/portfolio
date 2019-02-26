@@ -17,9 +17,6 @@
 		<link href="css/mdb.min.css" rel="stylesheet">
 		<!-- Your custom styles (optional) -->
 		<link href="css/style.css" rel="stylesheet">
-		<!-- ADDITIONAL SCRIPTS -->
-		<script
-			src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
 		<!-- JQuery -->
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<!-- Bootstrap tooltips -->
@@ -35,10 +32,13 @@
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 		<script type="text/javascript"
 				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-		<!-- Google reCAPTCHA -->
-		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<!-- ADDITIONAL SCRIPTS -->
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
 		<!-- Your JavaScript Form Validator -->
 		<script src="js/form-validate.js"></script>
+		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 	</head>
 
 	<body>
@@ -212,14 +212,17 @@
 								<!--Title-->
 								<p class="h4 mb-5 text-center text">CONTACT US</p>
 								<!--Name-->
-								<input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+								<input type="text" id="contactFormName" class="form-control mb-4" placeholder="Name">
 								<!--Email-->
-								<input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+								<input type="email" id="contactFormEmail" class="form-control mb-4" placeholder="E-mail">
 								<!--Message-->
-								<textarea class="form-control rounded-0 mb-5" id="exampleFormControlTextarea2" rows="4"
+								<textarea class="form-control rounded-0 mb-5" id="contactFormControlTextarea" rows="4"
 											 placeholder="Message"></textarea>
 								<!--Site Key-->
-								<div class="g-recaptcha" data-sitekey="6LfLEpQUAAAAAOaSRfQM3BSw5v6lbVtj-qJ4hFrD"></div>
+								<div class="text-center">
+									<div class="g-recaptcha"
+										  data-sitekey="6LfLEpQUAAAAAOaSRfQM3BSw5v6lbVtj-qJ4hFrD"></div>
+								</div>
 								<!--Button-->
 								<button class="btn btn-info btn-block btn-#212121 grey darken-1 mb-4" type="submit">Send
 								</button>
