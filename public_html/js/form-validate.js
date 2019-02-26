@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 	/* begin validate function here */
 
-	$("#contactCard").validate({
+	$("#contactMeForm").validate({
 		debug: true,
 		errorClass: "alert alert-danger",
 		errorLabelContainer: "#output-area",
@@ -49,9 +49,9 @@ $(document).ready(function() {
 			}
 		},
 		submitHandler: function(form) {
-			$("#contactCard").ajaxSubmit({
+			$("#contactMeForm").ajaxSubmit({
 				type: "POST",
-				url: $("#contactCard").attr("action"),
+				url: $("#contactMeForm").attr("action"),
 
 				success: function(ajaxOutput) {
 					// clear the output area's formatting
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 					// reset the form if it was successful
 					if($(".alert-success").length >= 1) {
-						$("#contactCard")[0].reset();
+						$("#contactMeForm")[0].reset();
 					}
 				}
 			})
