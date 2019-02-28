@@ -131,6 +131,12 @@ h3 {
 	border-radius: 0;
 	resize: none;
 }
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+}
+.form-contro::-moz-placeholder { /* Firefox 19+ */
+	color: white;
+}
 
 /* Footer */
 
