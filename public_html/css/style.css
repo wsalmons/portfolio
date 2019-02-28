@@ -117,7 +117,20 @@ h3 {
 
 /* Contact */
 
+#contactMeForm h3 {
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+}
 
+.form-control {
+	background-color: rgba(0, 0, 0, 0.5); !important;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	border-radius: 0;
+	resize: none;
+}
 
 /* Footer */
 
@@ -125,6 +138,14 @@ h3 {
 	background-color: #454944;
 }
 
+.footer-copyright {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.page-footer .fab {
+	font-size: 200%;
+}
 /* Animation Intro*/
 
 span {
