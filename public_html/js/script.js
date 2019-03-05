@@ -5,7 +5,7 @@ new WOW().init();
 //Text Animation
 document.addEventListener('DOMContentLoaded',function(event){
 	// array with texts to type in typewriter
-	var dataText = ["Hi, I'm Wyatt.", "I am a driven, detail-oriented, fast-paced web developer.", "I am passionate about coding, and creating.", "I strive to leave a lasting, positive impact on the people around me.", "Let's move mountains."];
+	var dataText = ["Hi, I'm Wyatt.", "I am a web developer, with a passion for creative web design.", "Let's move mountains."];
 
 	// type one text in the typwriter
 	// keeps calling itself until the text is finished
