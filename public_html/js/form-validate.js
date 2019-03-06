@@ -37,16 +37,16 @@ $(document).ready(function() {
 			// error messages to display to the end user when rules above don't pass
 			messages: {
 				contactFormName: {
-					required: "Y u no add name"
+					required: "Please add a name."
 				},
 				contactFormEmail: {
-					email: "y u no use real email",
-					required: "Y u no add email",
+					email: "Please add valid email address.",
+					required: "Please add valid email address.",
 				},
 				contactFormTextarea: {
-					required: "Y u no add message",
-					maxlength: "Y u no write so much",
-					minlength: "Y you no write so little",
+					required: "Please add message.",
+					maxlength: "Message is too long.",
+					minlength: "Message is too short.",
 				}
 			},
 			submitHandler: function(form) {
