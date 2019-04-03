@@ -26,7 +26,7 @@ h5 {
 }
 
 h3 {
-	font-family: "M PLUS 1p", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .hr-light {
@@ -145,7 +145,7 @@ h3 {
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color: white;
 }
-.form-contro::-moz-placeholder { /* Firefox 19+ */
+.form-control::-moz-placeholder { /* Firefox 19+ */
 	color: white;
 }
 
@@ -210,6 +210,12 @@ span {
 @media (max-width: 991px) {
 	.navbar:not(.top-nav-collapse) {
 		background: #454944;
+	}
+}
+
+@media (max-width: 576px) {
+	.container-fluid .fab {
+		font-size: 300%;
 	}
 }
 
