@@ -1,0 +1,240 @@
+@font-face {
+	font-family: 'M PLUS 1p', sans-serif;
+}
+
+@font-face {
+	font-family: "typew";
+	src: url(../font/typew.ttf) format("truetype");
+}
+
+html,
+body,
+header,
+.view {
+	height: 100%;
+}
+
+/* Fonts*/
+
+h1 {
+	letter-spacing: 3px;
+	font-family: "Roboto", sans-serif;
+}
+
+h5 {
+	letter-spacing: 3px;
+}
+
+h3 {
+	font-family: "M PLUS 1p", sans-serif;
+}
+
+.hr-light {
+	border-top: 3px solid #fff;
+	width: 80px;
+}
+
+.container-fluid .fab {
+	font-size: 500%;
+	color: black;
+	text-shadow: 1px 1px 4px gray, 0 0 50px white, 0 0 10px gray;
+}
+
+#halfpage h1 {
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+}
+
+#portfolioAnch h1 {
+	color: black;
+	font-family: 'Roboto', monospace;
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+
+}
+
+.typewrite {
+	font-size: 3em;
+	color: white;
+	font-family: 'typew', monospace;
+	letter-spacing: 1px;
+}
+
+#contactCard p {
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+}
+
+/* Nav Bar*/
+
+.top-nav-collapse {
+	background-color: #454944;
+}
+
+.navbar:not(.top-nav-collapse) {
+	background: transparent;
+}
+
+/* Background Images*/
+
+#fullpage {
+	background-image: url(../images/intro-bg2.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#halfpage {
+	background-image: url(../images/bg2.jpeg);
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#halfpageContact {
+	background-image: url(../images/contact.jpeg);
+	height: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+/* Down Arrow*/
+
+#downButton {
+	position: absolute;
+	bottom: 10%;
+	left: 0;
+}
+
+#arrowBounce {
+	font-size: 200%;
+}
+
+/* Carousel */
+
+.carousel-item:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background:rgba(0,0,0,0.4);
+}
+
+.carousel-inner img {
+	margin: auto;
+}
+
+/* Contact */
+
+#contactMeForm h3 {
+	text-shadow: 1px 1px 2px gray, 0 0 50px white, 0 0 10px gray;
+}
+
+.form-control {
+	background-color: rgba(0, 0, 0, 0.5); !important;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	border-radius: 0;
+	resize: none;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: white;
+}
+.form-contro::-moz-placeholder { /* Firefox 19+ */
+	color: white;
+}
+
+/* Footer */
+
+.page-footer {
+	background-color: #454944;
+}
+
+.footer-copyright {
+	margin-left: -0.9rem;
+	margin-right: -0.9rem;
+}
+
+.page-footer .fab {
+	font-size: 150%;
+}
+/* Animation Intro*/
+
+span {
+	border-right: .05em solid;
+	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+	50% {
+		border-color: transparent;
+	}
+}
+
+/* Animation Portfolio*/
+
+.portfoliotype{
+	position: relative;
+	top: 50%;
+	width: 24em;
+	margin: 0 auto;
+	border-right: 2px solid rgba(255,255,255,.75);
+	font-size: 180%;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	transform: translateY(-50%);
+}
+
+.anim-typewriter{
+	animation: typewriter 1s steps(10) 1s 1 normal both,
+	blinkTextCursor 900ms steps(44) infinite normal;
+
+}
+@keyframes typewriter{
+	from{width: 0;}
+	to{width: 4.5em;}
+}
+@keyframes blinkTextCursor{
+	from{border-right-color: black;}
+	to{border-right-color: transparent;}
+}
+
+/* Media Queries */
+
+@media (max-width: 991px) {
+	.navbar:not(.top-nav-collapse) {
+		background: #454944;
+	}
+}
+
+@media (max-width: 576px) {
+	img,
+	.col-sm-4 {
+		margin-left: 4rem;
+	}
+}
+
+@media (max-width: 380px) {
+	img,
+	.col-sm-4 {
+		margin-left: 2.4rem;
+	}
+}
+
+@media (max-width: 740px) {
+	html,
+	body,
+	header,
+	.view {
+		height: 100vh;
+	}
+}
+
+
+
